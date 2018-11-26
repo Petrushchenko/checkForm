@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <form>
+            <input type="text" name="name" placeholder="First name" required>
+            <input type="text" name="last" placeholder="Last name" required>
+            <div>
+                 <label for="birthday">Birthday</label>  
+                <input type="date" name="birthday" value="2000-01-01" id="birthday" required>
+            </div>
+            <fieldset>
+                <legend>sex</legend>
+                <input type="radio" name="sex" id="m" required>
+                <label for="m">male</label>
+                <input type="radio" name="sex" id="f">
+                <label for="f">female</label>
+            </fieldset>
+            <div>
+                <label for="country">Choose country</label>
+                <select id="country" required>
+                    <option>Ukraine</option>
+                    <option>USA</option>
+                    <option value="2">Canada</option>
+                </select>
+            </div>
+            <input type="email" name="email" required placeholder="Email">
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <textarea placeholder="Notes"></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
