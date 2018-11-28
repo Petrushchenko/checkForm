@@ -95,22 +95,22 @@ class Verification {
         };
     }
     checkEmail(){
-       // this.removeMessage();
+
         this.nextEl = this.elem.nextElementSibling;
 
         this.message = "Invalid Email address";
         console.log(this.valid);
         const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
-      //  console.log(reg.test(this.elem.value));
+
         if (!reg.test(this.elem.value)) {
             this.elem.classList.add('error');
             this.valid = !this.valid;
         console.log(this.valid);
 
             this.showError();
-            //this.removeMessage();
+  
         } else {
-            this.elem.classList.add('error');
+            this.elem.classList.remove('error');
             this.removeMessage();
 
         }
