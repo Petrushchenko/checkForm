@@ -4,8 +4,10 @@
     <title>form</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link  href="datepicker.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -14,7 +16,10 @@
             <input type="text" name="last" placeholder="Last name" required>
             <div>
                  <label for="birthday">Birthday</label>  
-                <input type="date" name="birthday" value="2000-01-01" id="birthday" required>
+                <!--<input type="date" name="birthday" value="2000-01-01" id="birthday" required>-->
+                <input data-toggle="datepicker">
+                <!--<textarea data-toggle="datepicker"></textarea>-->
+                <div data-toggle="datepicker"></div>
             </div>
             <fieldset>
                 <legend>sex</legend>
@@ -38,5 +43,11 @@
             <button>Submit</button>
         </form>
     </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="datepicker.js"></script>
+
+    <script type="text/javascript">
+        $('[data-toggle="datepicker"]').datepicker();
+    </script>
 </body>
 </html>
